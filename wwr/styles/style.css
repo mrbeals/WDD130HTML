@@ -21,13 +21,13 @@ main section {
     height: 725px;
 }
 body {
-    background-color: white;
+    background-color: #F5F5F5 ;
 }
 header {
     background-color: #495159;
 }
 nav a:hover {
-    color: #119DA4;
+    color: #10898f;
 }
 nav a:hover, .join:hover {
     background-color: #DCEDFF;
@@ -41,7 +41,7 @@ nav a:hover, .join:hover {
     background-color: #DCEDFF ;
 }
 #background {
-    background-color: #495159;
+    background-color: #495159 ;
 }
 .msg {
     background-color: #495159;

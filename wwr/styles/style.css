@@ -316,9 +316,7 @@ nav {
 #space {
     height:150px;
 }
-#rivtitle {
-    justify-self:center;
-}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;

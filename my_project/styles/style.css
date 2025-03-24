@@ -2,7 +2,8 @@
 
 #homecontent {
     margin:0;
-    max-width:1800px;
+    max-width:1600px;
+    min-width:1600px;
 }
 img {
     width:200px;

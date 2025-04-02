@@ -19,8 +19,8 @@
             </nav>
         </header>
         <div id="art3dhero">
-            <div id="art3dtxt">
-                <h1>About Joceline</h1>
+            <div class="art3dtxt">
+                <h1>Joceline's Art Journey</h1>
                 <p>Joceline Began art in elementary exploring with anything she could get her hands on. Then moving to painting when she was first gifted paints. 
                     She would scribble alot. She would create for her enjoyment and fun but as she got older art began meaning so much more to her. It was a way for her
                     to express herself and through the moods and creations she would capture through practice and a steady hand. She persued art in highschool,
@@ -28,20 +28,25 @@
                     As well as a way to worship God. She now pursues Art as a College student at BYU-Idaho, studying to receive her illustration degree.
                 </p>
             </div>
-            <img class="pagesheroimg" src="images/jocelineartist.jpg" alt="Picture of artist">
+            <div id="art3dheroimgsection">
+            <img src="images/jocelineartist.jpg" alt="Picture of artist">
+        </div>
+        </div>
+        <div id="flower_lined">
+            <div id="flower1"><img src="images/branchleft.png" alt="left branch"></div>
+            <div id="flower2"><img src="images/cherrybunch.jpg" alt="middle bunch"></div>
+            <div id="flower3"><img src="images/branchright.png" alt="right bunch"></div>
         </div>
         <main id="art3dmain">
-            <div class="art3dimage">
-                <input type="checkbox" id="art3dtext1">
-                <label for="art3dtext1">
-                    <img class="gridimages" src="images/peacefulhouse.jpeg" alt="image for page3">
-                </label>
-                <h2>Peaceful House</h2>
-                <div class="art3dpopuptext">Peaceful House - I wanted to portray the emotion of joy what it feels and looks life. The brilliance and bright colors. 
+            <div id="art3d1">
+                <button type="button" class="collapsible"><img class="gridimages" src="images/peacefulhouse.jpeg" alt="peaceful house"></button>
+                <div class="art3dcontent">
+                <p><i>Peaceful House</i> - I wanted to portray the emotion of joy what it feels and looks life. The brilliance and bright colors. 
                     Along with the warmth of that feeling. The home has always been an inspiration of mine. What it looks like feels like, 
                     what it can be. Nature will always play a big part and continue to inspire me in many works of art. God reminds me that 
                     family is grounded like roots of a tree. This piece was created out of cardboard materials, water color, and acrylic paint. 
-                    Each layer was carefully placed to create this 3D model.</div>
+                    Each layer was carefully placed to create this 3D model.</p>
+                </div>
             </div>
         </main>
         <footer>
@@ -55,5 +60,22 @@
                 <img src="images/instagram.png" alt="instagram icon"> 
         </footer>
     </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+            var i;
+    
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+        }
+      });
+    }
+    
+    </script>
 </body>
 </html>
